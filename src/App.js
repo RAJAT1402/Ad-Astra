@@ -1,19 +1,19 @@
 import React from 'react'
-import Part1 from "./components/Part1"
-import Part2 from './components/Part2'
-import Part3 from './components/Part3'
-import Part4 from './components/Part4'
-import Part5 from './components/Part5'
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Home from "./pages/home";
+import HowItWorks from "./pages/howItWorks";
+import AboutUs from "./pages/aboutus";
 
 function App() {
   return (
-    <>
-        <Part1 />
-        <Part2 />
-        <Part3 />
-        <Part4 />
-        <Part5 />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/howItWorks" element={<HowItWorks />} />
+        <Route path="/aboutUs" element={<AboutUs />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

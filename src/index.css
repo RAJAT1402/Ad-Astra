@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
@@ -27,7 +29,9 @@ body {
 
 .heading{
   font-family: 'Amarante';
-  font-size: 2.2rem;
+  vertical-align: bottom;
+  margin-left: 1rem;
+  font-size: 3rem;
 }
 
 .navbar1 > *{
@@ -36,7 +40,7 @@ body {
   font-family: 'Poppins';
 }
 
-/* ------------------------------------ First Container ------------------------------------ */
+/* ------------------------------------ Main Div Container ------------------------------------ */
 
 .container-main{
   display: flex;
@@ -48,6 +52,7 @@ body {
 
 .text{
   font-family: 'Poppins';
+  color: white;
   /* font-size: 1.1rem; */
   padding-top: 2rem;
   width: 27rem;
@@ -67,20 +72,35 @@ body {
 }
 
 .img1{
-  height: 22rem;
+  height: 25rem;
+  border-radius: 20%;
+}
+
+/* ********************************************** Selling Cards Container ***************************************** */
+
+.sub-heading1{
+  font-family: 'Poppins';
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem 4rem 8rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 /* -------------------------------------------------- Clouds ---------------------------- */
 
 .cloud{
   position: absolute;
-  /* width: 100vw; */
+  width: 100vw;
   z-index: 10;
 }
 
 .cloud1{
   position: absolute;
-  /* width: 100vw; */
+  width: 100vw;
   z-index: 5;
 }
 
@@ -89,9 +109,14 @@ body {
   z-index: 1;
 } 
 
-/* **************************************************** Second Container **************************************** */
+.background-purple{
+  background-color: #302747;
+}
+
+/* **************************************************** Why we Choose AR Container **************************************** */
 
 .header{
+  /* color: white; */
   width: 100vw;
   display: flex;
   align-items: center;
@@ -99,6 +124,15 @@ body {
   font-family: "Amarante";
   font-size: 3.5rem;
   margin-bottom: 4rem;
+}
+
+.whyAR-container{
+  color: white;
+}
+
+.whyAR-image{
+  margin-left: 20rem;
+  margin-bottom: 5rem;
 }
 
 .container3{
@@ -118,13 +152,14 @@ body {
   background-color: #DD7C23;
   border: 0.2rem solid #EBD048;
   border-radius: 50%;
-  height: 1rem;
-  width: 1rem;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
 }
 
 .sub-heading{
   font-family: 'Poppins';
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
   width: 15rem;
 }
@@ -136,9 +171,88 @@ body {
   margin: 1rem 4rem;
 }
 
-/* ********************************************** Third Container ***************************************** */
+.img2{
+  padding: 10rem 5rem;
+}
 
+/* ********************************************** Video Container ***************************************** */
+.videoContainer{
+  color: white;
+  padding-top: 2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 10rem;
+}
+
+.videoContainer1{
+  display: flex;
+  margin: 4rem 10rem 0rem 5rem;
+  padding-bottom: 5rem;
+}
+
+.videoimg{
+  height: 25rem;
+  width: 50rem;
+  border-radius: 10%;
+  /* padding-left: 20rem; */
+  position: relative;
+  top: -5rem;
+  left: 20rem;
+}
+
+.videoimg1{
+  height: 25rem;
+  width: 35rem;
+  border-radius: 10%;
+  padding: 0rem 1rem 2rem 2rem;
+  position: relative;
+  /* top: -5rem;
+  left: 20rem; */
+}
+
+.video-heading{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.video-text{
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 1rem;
+  /* padding-bottom: 2rem; */
+}
+
+.arrow{
+  position: relative;
+  top: 8rem;
+  padding: 1rem;
+}
+
+.bottomCircle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.bottomCircle>img{
+  margin-left: 5rem;
+}
+
+/* ********************************************** Our Services Container ***************************************** */
+
+.our-services-container{
+    /* background-color: #302747; */
+    /* padding-top: 25rem; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%; */
+}
+  
 .cards{
+  margin-left: 5rem;
+  color: white;
   display: flex;
   flex-wrap: wrap;
 }
@@ -147,7 +261,15 @@ body {
   display: flex;
   width: 30rem;
   margin: 4rem;
-  padding: 2.5rem;
+  padding: 2.2rem 2.8rem;
+  border-radius: 20%;
+  border: 0.2rem solid white;
+}
+
+.card2{
+  width: 30rem;
+  margin: 4rem;
+  padding: 2.2rem 2.8rem;
   border-radius: 20%;
   border: 0.2rem solid white;
 }
@@ -155,13 +277,199 @@ body {
 .card-img{
   border-radius: 20%;
   border: 0.4rem solid white;
+  margin-right: 1.5rem;
 }
 
 .card-text{
+  margin-top: 1rem;
   font-family: 'poppins';
 }
 
-/* ********************************************** Fourth Container ***************************************** */
+.card-button{
+  margin-top: 3rem;
+  font-family: 'Amarante';
+  font-size: 2rem;
+  border: 0.1rem solid white;
+  height: 3rem;
+  width: 20rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ********************************************** User Testimonials Container ***************************************** */
+
+.userHeader{
+  color: white;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Amarante";
+  font-size: 3.5rem;
+  padding-bottom: 5rem;
+}
+
+/* ********************************************** Testimonial Container ***************************************** */
+.testimonial{
+  background-color: white;
+  width: 26rem;
+  border-radius: 1rem;
+  display: flex;
+}
+
+.testimonial-container1{
+  padding: 1rem 0.5rem;
+}
+
+.testimonial-container{
+  position: relative;
+  height: 30rem;
+  width: 100%;
+  content: " ";
+}
+
+.testimonial-container>*:nth-child(1){
+  position: absolute;
+  left: 25rem;
+  top: 5rem;
+  z-index: 3;
+  box-shadow: -1rem 1rem 1rem rgb(28, 24, 24);
+}
+
+.testimonial-container>*:nth-child(2){
+  position: absolute;
+  left: 50rem;
+  top: 8rem;
+  z-index: 5;
+  box-shadow: -1rem 1rem 1rem rgb(28, 24, 24);
+}
+
+.testimonial-container>*:nth-child(3){
+  position: absolute;
+  left: 40rem;
+  top: 17rem;
+  z-index: 2;
+  box-shadow: -1rem 1rem 1rem rgb(28, 24, 24);
+}
+
+.testimonial-container>*:nth-child(4){
+  position: absolute;
+  left: 45rem;
+  /* top: -1rem; */
+  z-index: 4;
+  box-shadow: -1rem 1rem 1rem rgb(28, 24, 24);
+}
+
+.testimonial-container>*:nth-child(5){
+  position: absolute;
+  left: 27rem;
+  top: 14rem;
+  /* color: white; */
+  background-color: #B9B9B9;
+  box-shadow: -1rem 1rem 1rem rgb(28, 24, 24);
+}
+
+.testimonial-image{
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.testimonial-name{
+  font-family: 'Amarante';
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+}
+
+.testimonial-designation{
+  color: #757474;
+  padding-bottom: 0.2rem;
+}
+
+/* ********************************************** GetInTouch Container ***************************************** */
+
+.getInTouch{
+  padding-top: 5rem;
+  display: flex;
+  margin-bottom: 15rem;
+  flex-direction: column;
+  border-radius: 2rem;
+  width: 5rem;
+  margin: 2rem;
+  margin-left: 5rem;
+  width: 85vw;
+  height: 35rem;
+  background: linear-gradient(to right, white 80%, #302747 80%);
+  box-shadow: -1rem 1rem 1rem #888888;
+}
+
+.getInTouch-header{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  font-family: "Amarante";
+  font-size: 3.5rem;
+  /* padding-bottom: 5rem; */
+  padding-left: 5rem;
+}
+
+.getInTouch-text{
+  font-family: "poppins";
+  /* font-size: 1.5rem; */
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+  padding-left: 5rem;
+}
+
+
+.getInTouch>input{
+  margin: 0.5rem;
+  margin-left: 5rem;
+  width: 30rem;
+}
+
+.getInTouch-button{
+  color: white;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  font-family: 'Poppins';
+  font-size: 1rem;
+  /* border: 0.1rem solid white; */
+  background-color: #302747;
+  height: 4rem;
+  width: 30rem;
+  /* border-radius: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect-container{
+  display: flex;
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+
+.connect{
+  display: flex;
+  padding-right: 2rem;
+}
+
+.connect>*{
+  padding-right: 1rem;
+}
+
+.map{
+  width: 30rem;
+  height: 35rem;
+  position: relative;
+  right: -50rem;
+  top: -30rem;
+}
+
+/* ********************************************** Our Team Container ***************************************** */
 
 .images{
   display: flex;
@@ -182,7 +490,7 @@ body {
   margin: 1rem;
 }
 
-/* ********************************************** Fifth Container ***************************************** */
+/* ********************************************** NavBar Container ***************************************** */
 
 
 .container5{
@@ -209,3 +517,79 @@ body {
   font-size: 1.6rem;
   padding-top: 1.2rem;
 }
+
+/* ********************************************** Store Main Container ***************************************** */
+
+.store{
+  background-color: #302747;
+  color: white;
+}
+
+.store-maindiv{
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.store-maindiv>*{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ********************************************** Selling Cards Container ***************************************** */
+
+.card1{
+  margin: 5rem;
+  background-color: #f4f4f4;
+  width: 20rem;
+  /* height: 3rem; */
+
+}
+
+.card1-img{
+  position: relative;
+  top: -5rem;
+  left: 4rem;
+}
+
+.card1-heading{
+  
+  /* display: flex; */
+  /* justify-content: center; */
+  width: 80%;
+  margin: auto;
+  align-items: center;
+}
+
+.card1-heading h2{
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.card1-price{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1-buy{
+  position: relative;
+  left: 4rem;
+  bottom: -1.5rem;
+  background-color: #302747;
+  color: white;
+  width: 12rem;
+  height: 4rem;
+  border-radius: 10%;
+  font-family: 'Amarante';
+  font-weight: 500;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

@@ -1,8 +1,8 @@
 import React from 'react'
 import Logo from "../Images/logo.png";
-
-function Part5() {
+function Footer() {
   return (
+    <>
     <div className='container5'>
         <div>
             <img src={Logo}></img>
@@ -19,7 +19,8 @@ function Part5() {
             <div className='text6'>Our Team</div>
         </div>
     </div>
+    </>
   )
 }
 
-export default Part5
+export default Footer
